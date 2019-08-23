@@ -1,33 +1,207 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(to bottom, #000000, #0f9b0f) no-repeat;
+  background-color: #0f9b0f;
+  background-size: cover;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+#nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 0 3em 0;
+  padding: 0;
+  list-style: none;
+  color: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#nav div {
+  display: flex;
+  align-items: center;
+}
+
+#nav li {
+  padding: 8px 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#logo {
+  height: 70px;
+  width: 70px;
+  padding: 10px;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  position: relative;
+  display: inline-block;
+}
+
+.button {
+  padding: 0;
+  width: 50px;
+  border: 0;
+  background-color: transparent;
+  padding-bottom: 10%;
+  color: white;
+  cursor: pointer;
+  outline: 0;
+  font-size: 30px;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 300px;
+  z-index: 2;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14);
+}
+
+.dropdown ul {
+  list-style: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown li {
+  padding: 8px 12px;
+}
+
+.dropdown li:hover {
+  background-color: rgba(0, 0, 0, 0.14);
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  padding-left: 5px;
+  color: white;
+}
+
+a:hover,
+.button:hover,
+.links:hover {
+  color: #59bb63;
+}
+
+.links:hover {
+  cursor: pointer;
+}
+
+.not-found {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.not-found img {
+  height: 30%;
+  width: 30%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hidden {
+  display: none;
+}
+
+.show {
+  display: inline;
+}
+
+.covers {
+  height: 400px;
+}
+
+.card {
+  display: flex;
+  width: auto;
+  height: 450px;
+  box-shadow: 5px 5px 5px rgb(0, 0, 0);
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px;
+  background-color: rgba(65, 65, 65, 0.392);
+  color: whitesmoke;
+  margin-bottom: 30px;
+}
+
+.card img {
+  padding: 20px;
+}
+
+.card h3 {
+  font-size: 30px;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.description {
+  display: inline-block;
+  overflow: scroll;
+  max-height: 100px;
+  justify-self: flex-end;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.far,
+.fas {
+  margin-right: 20px;
+  margin-left: 5px;
+}
+
+.fa-heart {
+  color: red;
+}
+
+.fa-hand-rock {
+  color: gold;
+}
+
+.fa-clock {
+  color: aqua;
+}
+
+.fa-check-square {
+  color: lightgreen;
+}
+
+
+.consoles {
+  font-size: 1.5em;
+}
+
+.search-form input {
+  display: none;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: 0vh;
+  top: 35%;
+  bottom: 58%;
+  left: 40%;
+  right: 40%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+
 }
